@@ -357,7 +357,7 @@ workflows:
       - system-tests-bucket:
           requires: [clone-kratix]
       - e2e-demo-test-helm-bucket:
-          requires: [clone-kratix. clone-helm-charts]
+          requires: [clone-kratix, clone-helm-charts]
       - e2e-demo-test-helm-git:
           requires: [clone-kratix, clone-helm-charts]
       ### ONLY DEV
