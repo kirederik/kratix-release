@@ -351,11 +351,11 @@ workflows:
       - clone-kratix
       - clone-helm-charts
       - unit-tests:
-          requires: [clone-kratix]
+          requires: [clone-kratix, clone-helm-charts]
       - system-tests-git:
-          requires: [clone-kratix]
+          requires: [clone-kratix, clone-helm-charts]
       - system-tests-bucket:
-          requires: [clone-kratix]
+          requires: [clone-kratix, clone-helm-charts]
       - e2e-demo-test-helm-bucket:
           requires: [clone-kratix, clone-helm-charts]
       - e2e-demo-test-helm-git:
