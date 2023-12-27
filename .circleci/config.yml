@@ -103,7 +103,7 @@ jobs:
           command: |
             git clone --depth 1 git@github.com:syntasso/helm-charts.git
       - persist_to_workspace:
-          root: .
+          root: ./charts
           paths:
             - charts/
 
