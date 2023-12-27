@@ -288,6 +288,7 @@ jobs:
       - attach_workspace:
           at: .
       - setup_git
+      - install_software
       - run:
           name: Push main
           command: |
