@@ -101,7 +101,7 @@ jobs:
       - run:
           name: Clone helm charts
           command: |
-            git clone --depth 1 git@github.com:syntasso/helm-charts.git
+            git clone --depth 1 git@github.com:syntasso/helm-charts.git charts
       - persist_to_workspace:
           root: ./charts
           paths:
